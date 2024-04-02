@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Страница 3</title>
+    <style>
+        /* Стилизация изображений */
+        img {
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        /* Стилизация ссылки "Skip to Main Content" */
+        #skip-link {
+            position: absolute;
+            top: -40px;
+        }
+        #skip-link:focus {
+            top: 0;
+        }
+        /* Стилизация навигации */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            color: red;
+        }
+        /* Стилизация галереи изображений */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .image-gallery img:nth-child(odd) {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" id="skip-link">Skip to Main Content</a>
+    <nav>
+        <a href="#">Ссылка 1</a>
+        <a href="#">Ссылка 2</a>
+        <a href="#">Ссылка 3</a>
+    </nav>
+    <main id="main-content">
+        <div class="image-gallery">
+            <img src="https://pixabay.com/get/57e8d3404b57a414f6da8c7dda79367b1138dfe2564c704c7c2878dd954dc451_640.jpg" alt="Ваше изображение 3">
+            <img src="https://pixabay.com/get/54e8d4444f50a814f6da8c7dda79367b1138dfe2564c704c7c2878dd954dc451_640.jpg" alt="Ваше изображение 4">
+            <img src="https://pixabay.com/get/57e8d3404b57a414f6da8c7dda79367b1138dfe2564c704c7c2878dd954dc451_640.jpg" alt="Ваше изображение 5">
+            <img src="https://pixabay.com/get/54e8d4444f50a814f6da8c7dda79367b1138dfe2564c704c7c2878dd954dc451_640.jpg" alt="Ваше изображение 6">
+            <img src="https://pixabay.com/get/57e8d3404b57a414f6da8c7dda79367b1138dfe2564c704c7c2878dd954dc451_640.jpg" alt="Ваше изображение 7">
+        </div>
+    </main>
+</body>
+</html>
