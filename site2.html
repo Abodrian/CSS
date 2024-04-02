@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Страница 2</title>
+    <style>
+        /* Стилизация изображений */
+        img {
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        /* Стилизация ссылки "Skip to Main Content" */
+        #skip-link {
+            position: absolute;
+            top: -40px;
+        }
+        #skip-link:focus {
+            top: 0;
+        }
+        /* Стилизация навигации */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" id="skip-link">Skip to Main Content</a>
+    <nav>
+        <a href="#">Ссылка 1</a>
+        <a href="#">Ссылка 2</a>
+        <a href="#">Ссылка 3</a>
+    </nav>
+    <main id="main-content">
+        <img src="https://pixabay.com/get/57e8d3404b57a414f6da8c7dda79367b1138dfe2564c704c7c2878dd954dc451_640.jpg" alt="Ваше изображение 2">
+    </main>
+</body>
+</html>
